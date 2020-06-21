@@ -28,7 +28,7 @@
                             <h1>The Greatwall China Bistro</h1>
                         </a>
                         <p>
-                            <img src="images/star-k-logo.png" alt="Kosher certification">
+                            <img src="/images/star-k-logo.png" alt="Kosher certification">
                             <span>BSTI Certified</span>
                         </p>
                     </div>
@@ -44,7 +44,7 @@
                 <!--nvabr collapse-->
                 <div id="collapsable-nav" class="collapse navbar-collapse">
                     <ul id="nav-list" class="nav navbar-nav navbar-right">
-                        <li>
+                        <li class="active">
                             <a href="menu-categories.html">
                                 <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
                         </li>
@@ -74,42 +74,97 @@
 
         </a>
     </div>
-    <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
+    <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div><!--end xs-->
 
-    <!--jumbotron-->
+
+     <!--main content-->
     <div id="main-content" class="container">
-        <div class="jumbotron">
-            <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-responsive visible-xs">
-        </div>
+        <h2 id="menu-categories-title" class="text-center">Snacks Menu</h2>
+    <div class="text-center">Snacks is not served until after 5pmm.</div>
 
-        <!--Nav tiles-->
-        <div id="home-tiles" class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <a href="menu-categories.html">
-                    <div id="menu-tile"><span>menu</span></div>
-                </a>
+    <section class="row">
+      <div class="menu-item-tile col-md-6">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="menu-item-photo">
+              <div>S01</div>
+              <img class="img-responsive" width="250" height="150" src="images/menu/S/S1.jpg" alt="Item">
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <a href="single-category.html">
-                    <div id="specials-tile"><span>specials</span></div>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-                <a href="https://goo.gl/maps/eX8NrFCAFCf6tMfRA" target="_blank">
-                    <div id="map-tile">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.1366199671006!2d91.82450411495553!3d22.34846968529859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd898b376f82d%3A0x20066e07022e5090!2sKazir%20Dewri%2C%20Chittagong!5e0!3m2!1sfr!2sbd!4v1591852988709!5m2!1sfr!2sbd"
-                            width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""
-                            aria-hidden="false" tabindex="0"></iframe>
-                        <span>map</span>
-                    </div>
-
-                </a>
-            </div>
+            <div class="menu-item-price">100tk<span> (pint)</span> 120tk <span>(quart)</span></div>
+          </div>
+          <div class="menu-item-description col-sm-7">
+            <h3 class="menu-item-title">Rice ball</h3>
+            <p class="menu-item-details">Rice Ball saucepan over high heat. When boiling, drop in meatballs. Stir in escarole, lemon zest and orzo. Return to a boil; reduce heat to medium. Cook at a slow boil for 10 minutes or until orzo is tender, stirring frequently. Serve sprinkled with cheese. </p>
+          </div>
         </div>
-        <!--end navigation tiles-->
-    </div>
-    <!--end jumbotron-->
+        <hr class="visible-xs">
+      </div>
+
+      <div class="menu-item-tile col-md-6">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="menu-item-photo">
+              <div>S02</div>
+              <img class="img-responsive" width="250" height="150" src="images/menu/S/S2.jpg" alt="Item">
+            </div>
+            <div class="menu-item-price">59tk<span> (pint)</span> 99 <span>(quart)</span></div>
+          </div>
+          <div class="menu-item-description col-sm-7">
+            <h3 class="menu-item-title">Chocolet Cake</h3>
+            <p class="menu-item-details">I’m picky about what makes a good enchilada. First off, it’s all about that sauce. The sauce makes or breaks an enchilada and this sauce is so delicious!
+
+              Second, no flour tortillas! Okay this is totally personal opinion but enchiladas on flour tortillas should never be a thing.
+              
+              Corn tortillas don’t get soggy and mushy. They absorb the sauce better and the flavor is just more fitting.</p>
+          </div>
+        </div>
+        <hr class="visible-xs">
+      </div>
+      <!-- Add after every 2nd menu-item-tile -->
+      <div class="clearfix visible-lg-block visible-md-block"></div>
+
+      <div class="menu-item-tile col-md-6">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="menu-item-photo">
+              <div>S03</div>
+              <img class="img-responsive" width="250" height="150" src="images/menu/S/S3.jpg" alt="Item">
+            </div>
+            <div class="menu-item-price">100tk<span> (pint)</span> 0<span>(quart)</span></div>
+          </div>
+          <div class="menu-item-description col-sm-7">
+            <h3 class="menu-item-title">Kung Pao Chicken</h3>
+            <p class="menu-item-details">My version involves making a marinade – a third of which is used to marinade the chicken. The remaining two-thirds is added at the end along with the vegetables and reduced down to get a thick sauce with loads of flavour.
+
+              I love to make extra kung pao chicken that i'll quickly cool, cover and refrigerate. It tastes great served cold with some couscous/quinoa/bulgur wheat and salad and should last 2 days in the fridge - which makes it a great option for meal prep.</p>
+          </div>
+        </div>
+        <hr class="visible-xs">
+      </div>
+
+      <div class="menu-item-tile col-md-6">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="menu-item-photo">
+              <div>S04</div>
+              <img class="img-responsive" width="250" height="150" src="images/menu/S/S4.jpg" alt="Item">
+            </div>
+            <div class="menu-item-price">100tk<span> (pint)</span> 0 <span>(quart)</span></div>
+          </div>
+          <div class="menu-item-description col-sm-7">
+            <h3 class="menu-item-title">Spicy Mee Goreng</h3>
+            <p class="menu-item-details">This spicy Asian noodles recipe was inspired by my dad, who spent part of his childhood in Singapore.  His time over there gave him a real taste for the spicy, saucy noodle/rice dishes Singapore is famous for, and he came back with a repertoire of lip smackingly good dishes that he passed on to me</p>
+          </div>
+        </div>
+        <hr class="visible-xs">
+      </div>
+      <!-- Add after every 2nd menu-item-tile -->
+      <div class="clearfix visible-lg-block visible-md-block"></div>
+
+    </section>
+
+      </div><!-- End #main-content -->
+    
 
     <!--Footer-->
     <footer class="panel-footer">
