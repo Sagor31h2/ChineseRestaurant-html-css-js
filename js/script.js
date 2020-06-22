@@ -60,6 +60,18 @@ $(function () {
 
   };
 
+  //menu categories--breakfast
+  var breakfast = "partial/menu/breakfast.html"
+  gw.loadBreakfast = function () {
+    showLoading("#main-content");
+    $ajaxUtils.sendGetRequest(
+      breakfast, function (responseText) {
+        document.querySelector("#main-content").innerHTML = responseText;
+      },
+      false);
+
+  };
+
 
   global.$gw = gw;
 
