@@ -72,6 +72,17 @@ $(function () {
 
   };
 
+  //menu categories--Lunch
+  var lunch = "partial/menu/lunch.html"
+  gw.loadLunch = function () {
+    showLoading("#main-content");
+    $ajaxUtils.sendGetRequest(
+      lunch, function (responseText) {
+        document.querySelector("#main-content").innerHTML = responseText;
+      },
+      false);
+
+  };
 
   global.$gw = gw;
 
