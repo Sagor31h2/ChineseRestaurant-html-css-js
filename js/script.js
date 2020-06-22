@@ -96,6 +96,18 @@ $(function () {
 
   };
 
+  //menu categories--snacks
+  var dinner = "partial/menu/dinner.html"
+  gw.loadDinner = function () {
+    showLoading("#main-content");
+    $ajaxUtils.sendGetRequest(
+      dinner, function (responseText) {
+        document.querySelector("#main-content").innerHTML = responseText;
+      },
+      false);
+
+  };
+
   global.$gw = gw;
 
 })(window);
