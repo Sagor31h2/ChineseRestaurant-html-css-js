@@ -13,3 +13,42 @@ $(function () {
     $(event.target).focus();
   });
 });
+
+//Partial load
+(function (global) {
+
+  var gw = {};
+
+  var indexhtml = "partial/home.html"
+  
+
+  //function for insert html
+  var insertHtml = function (selector, html) {
+    var targetElem = document.querySelector(selector);
+    targetElem.innerHTML = html;
+  };
+
+  // Show loading icon inside element identified by 'selector'.
+  var showLoading = function (selector) {
+    var html = "<div class='text-center'>";
+    html += "<img src='images/ajax-loader.gif'></div>";
+    insertHtml(selector, html);
+  };
+
+  //On page load
+
+  document.addEventListener("DOMContentLoaded", function (event) {
+    //Load home page
+    showLoading("#main-content");
+    $ajaxUtils.sendGetRequest(
+      indexhtml, function (responseText) {
+        document.querySelector("#main-content").innerHTML=responseText;
+      },
+      false);
+
+  });
+  
+
+  global.$gw = gw;
+
+})(window);
