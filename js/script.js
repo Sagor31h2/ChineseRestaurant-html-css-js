@@ -1,5 +1,5 @@
 //Nav blur
-$(function () { 
+$(function () {
   $("#navbarToggle").blur(function (event) {
     var screenWidth = window.innerWidth;
     if (screenWidth < 768) {
@@ -8,7 +8,7 @@ $(function () {
   });
 
   // In Firefox and Safari
- 
+
   $("#navbarToggle").click(function (event) {
     $(event.target).focus();
   });
@@ -20,7 +20,7 @@ $(function () {
   var gw = {};
 
   var indexhtml = "partial/home.html"
-  
+
 
   //function for insert html
   var insertHtml = function (selector, html) {
@@ -42,12 +42,24 @@ $(function () {
     showLoading("#main-content");
     $ajaxUtils.sendGetRequest(
       indexhtml, function (responseText) {
-        document.querySelector("#main-content").innerHTML=responseText;
+        document.querySelector("#main-content").innerHTML = responseText;
       },
       false);
 
   });
-  
+
+  //menu categories
+  var menuhtml = "partial/menu/menuCategories.html"
+  gw.loadMenu = function () {
+    showLoading("#main-content");
+    $ajaxUtils.sendGetRequest(
+      menuhtml, function (responseText) {
+        document.querySelector("#main-content").innerHTML = responseText;
+      },
+      false);
+
+  };
+
 
   global.$gw = gw;
 
