@@ -84,6 +84,18 @@ $(function () {
 
   };
 
+  //menu categories--snacks
+  var snacks = "partial/menu/snacks.html"
+  gw.loadSnacks = function () {
+    showLoading("#main-content");
+    $ajaxUtils.sendGetRequest(
+      snacks, function (responseText) {
+        document.querySelector("#main-content").innerHTML = responseText;
+      },
+      false);
+
+  };
+
   global.$gw = gw;
 
 })(window);
