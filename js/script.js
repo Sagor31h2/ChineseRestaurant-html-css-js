@@ -120,6 +120,19 @@ $(function () {
 
   };
 
+  //menu categories--snacks
+  var about = "partial/about.html"
+  gw.loadAbout = function () {
+    showLoading("#main-content");
+    $ajaxUtils.sendGetRequest(
+      about, function (responseText) {
+        document.querySelector("#main-content").innerHTML = responseText;
+      },
+      false);
+
+  };
+
+
   global.$gw = gw;
 
 })(window);
