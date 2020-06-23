@@ -108,7 +108,7 @@ $(function () {
 
   };
 
-  //menu categories--snacks
+  //menu categories--specials
   var specials = "partial/menu/specials.html"
   gw.loadSpecials = function () {
     showLoading("#main-content");
@@ -120,12 +120,24 @@ $(function () {
 
   };
 
-  //menu categories--snacks
+  //About
   var about = "partial/about.html"
   gw.loadAbout = function () {
     showLoading("#main-content");
     $ajaxUtils.sendGetRequest(
       about, function (responseText) {
+        document.querySelector("#main-content").innerHTML = responseText;
+      },
+      false);
+
+  };
+
+  //Awards
+  var awards = "partial/awards.html"
+  gw.loadAwards = function () {
+    showLoading("#main-content");
+    $ajaxUtils.sendGetRequest(
+      awards, function (responseText) {
         document.querySelector("#main-content").innerHTML = responseText;
       },
       false);

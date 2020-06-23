@@ -227,7 +227,32 @@ h3.menu-item-title {
 }
 /* END SINGLE CATEGORY PAGE */
 
+/*Awards-pace*/
+#award-space1{
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 600px;
+  height: 620px;
+  margin: 0 auto 15px;
 
+}
+
+#award-space2{
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 600px;
+  height: 620px;
+  margin: 0 auto 15px;
+
+}
+
+#awards-para{
+  position: relative;
+  text-align: center;
+
+}
 
   /********** Large devices only **********/
 @media (min-width: 1200px) {
@@ -345,7 +370,10 @@ h3.menu-item-title {
   .menu-item-description {
     text-align: center;;
   }
-
+/*Award hr*/
+#award-hr{
+  width: 70%;
+}
 }
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
