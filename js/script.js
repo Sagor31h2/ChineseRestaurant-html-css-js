@@ -108,6 +108,18 @@ $(function () {
 
   };
 
+  //menu categories--snacks
+  var specials = "partial/menu/specials.html"
+  gw.loadSpecials = function () {
+    showLoading("#main-content");
+    $ajaxUtils.sendGetRequest(
+      specials, function (responseText) {
+        document.querySelector("#main-content").innerHTML = responseText;
+      },
+      false);
+
+  };
+
   global.$gw = gw;
 
 })(window);
